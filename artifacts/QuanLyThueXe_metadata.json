@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.8.37+commit.f401782d"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "cacHopDong",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "nguoiThue",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "xeId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ngayBatDau",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ngayTraDuKien",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tienCoc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "daTraXe",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tienHoanLai",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "hopDongCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mucPhatMoiNgay",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_xeId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_soNgayThue",
+						"type": "uint256"
+					}
+				],
+				"name": "thueXe",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_hopDongId",
+						"type": "uint256"
+					}
+				],
+				"name": "traXe",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_hopDongId",
+						"type": "uint256"
+					}
+				],
+				"name": "xemChiTietHopDong",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "nguoiThue",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "xeId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ngayBatDau",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ngayTraDuKien",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tienCoc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "daTraXe",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tienHoanLai",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HopDongThueXe.sol": "QuanLyThueXe"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HopDongThueXe.sol": {
+			"keccak256": "0x5e5db848fe1c3ceccb0a186f6c319307b8b4de9fc70768adf4e85c8e8a2e0648",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84575f70ed5f66b154a4309e389ed3e6ac666f121b2467307f60864946be7f0e",
+				"dweb:/ipfs/Qmda98auNq3RnQV1aXYbvhSwZqgjbPvhsG5XRpaXueDr3s"
+			]
+		}
+	},
+	"version": 1
+}
