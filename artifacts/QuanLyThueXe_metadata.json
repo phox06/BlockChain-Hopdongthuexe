@@ -6,6 +6,123 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "donViMoi",
+						"type": "uint256"
+					}
+				],
+				"name": "CapNhatDonViThoiGian",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nguoiNhan",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "soTien",
+						"type": "uint256"
+					}
+				],
+				"name": "DaRutTienPhat",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "hopDongId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nguoiThue",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "xeId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ngayBatDau",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ngayTraDuKien",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tienCoc",
+						"type": "uint256"
+					}
+				],
+				"name": "XeDaThue",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "hopDongId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nguoiThue",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "soNgayTre",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tienPhat",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tienHoanLai",
+						"type": "uint256"
+					}
+				],
+				"name": "XeDaTra",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -56,7 +173,59 @@
 			},
 			{
 				"inputs": [],
+				"name": "chuSoHuu",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_donViMoi",
+						"type": "uint256"
+					}
+				],
+				"name": "datDonViThoiGian",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "donViThoiGian",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "hopDongCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mucCoc",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -81,6 +250,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "rutTienPhat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -99,6 +275,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "tienPhatDaThu",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -114,6 +303,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "xeDangChoThue",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_hopDongId",
 						"type": "uint256"
@@ -122,39 +330,46 @@
 				"name": "xemChiTietHopDong",
 				"outputs": [
 					{
-						"internalType": "address",
-						"name": "nguoiThue",
-						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "xeId",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "ngayBatDau",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "ngayTraDuKien",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tienCoc",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "daTraXe",
-						"type": "bool"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tienHoanLai",
-						"type": "uint256"
+						"components": [
+							{
+								"internalType": "address",
+								"name": "nguoiThue",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "xeId",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ngayBatDau",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ngayTraDuKien",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tienCoc",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "daTraXe",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tienHoanLai",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct QuanLyThueXe.HopDongThueXe",
+						"name": "",
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -189,11 +404,11 @@
 	},
 	"sources": {
 		"contracts/HopDongThueXe.sol": {
-			"keccak256": "0x5e5db848fe1c3ceccb0a186f6c319307b8b4de9fc70768adf4e85c8e8a2e0648",
+			"keccak256": "0x0fbe20e6aa511e353f473326ea95d2b78fbbc49e3473172f6f8e56574984f253",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://84575f70ed5f66b154a4309e389ed3e6ac666f121b2467307f60864946be7f0e",
-				"dweb:/ipfs/Qmda98auNq3RnQV1aXYbvhSwZqgjbPvhsG5XRpaXueDr3s"
+				"bzz-raw://f4b4ab18063245f43d8774112f69c3ee2b8a627b20f9adf41f12c254b8a981d5",
+				"dweb:/ipfs/QmQC7uTAbAE4ExNmHLgCvH7Ds8Vah42W1ZaCGjMaTUwZWu"
 			]
 		}
 	},
